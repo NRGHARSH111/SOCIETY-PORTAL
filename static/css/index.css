@@ -1,0 +1,88 @@
+.gideon-roman-regular {
+  font-family: "Gideon Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    animation: slowZoom 30s ease-in-out infinite alternate;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* backdrop-filter: blur(2px); */
+  /* border: 1px solid black; */
+}
+
+.login-box {
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    color:black;
+     border-radius: 10px;
+  /* padding: 20px;
+  max-width: 500px;
+  margin: auto; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light semi-transparent border */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Actual blur effect */
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.form-control {
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+.form-control::placeholder {
+    color: #ddd;
+}
+
+.btn-primary {
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    background-color: #ff7e5f;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #feb47b;
+}
+
+input {
+    color: black;
+}
+
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
